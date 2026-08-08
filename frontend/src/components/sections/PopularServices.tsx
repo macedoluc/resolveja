@@ -7,6 +7,7 @@ import {
   House,
   ArrowRight,
 } from "lucide-react";
+import SectionTitle from "../ui/SectionTitle";
 
 function PopularServices() {
   const services = [
@@ -46,20 +47,12 @@ function PopularServices() {
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-6">
 
-        <div className="flex flex-col items-center text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-blue-600">
-            Encontre o profissional certo
-          </span>
-
-          <h2 className="mt-3 text-3xl font-bold text-gray-900 md:text-4xl">
-            Serviços populares
-          </h2>
-
-          <p className="mt-4 max-w-2xl text-gray-600">
-            Encontre profissionais qualificados para as necessidades
-            do seu dia a dia.
-          </p>
-        </div>
+        <SectionTitle
+          eyebrow="Encontre o profissional certo"
+          title="Serviços populares"
+          description="Encontre profissionais qualificados para as necessidades do seu dia a dia."
+          align="left"
+        />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => {

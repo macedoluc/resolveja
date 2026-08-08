@@ -1,5 +1,6 @@
-import heroImage from "../../../../assets/images/hero.svg";
+import heroImage from "../../assets/images/hero.svg";
 import Button from "../ui/Button";
+
 
 function Hero() {
   return (
