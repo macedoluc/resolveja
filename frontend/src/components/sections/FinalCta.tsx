@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Button from "../ui/Button";
 
 function FinalCta() {
   return (
@@ -17,40 +18,13 @@ function FinalCta() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
 
-            <button
-              className="
-                inline-flex
-                items-center
-                gap-2
-                rounded-xl
-                bg-white
-                px-6
-                py-3
-                font-semibold
-                text-blue-600
-                transition
-                hover:bg-blue-50
-              "
-            >
+            <Button>
               Encontrar profissional
-              <ArrowRight size={18} />
-            </button>
+            </Button>
 
-            <button
-              className="
-                rounded-xl
-                border
-                border-blue-400
-                px-6
-                py-3
-                font-semibold
-                text-white
-                transition
-                hover:bg-blue-700
-              "
-            >
+            <Button variant="secondary">
               Oferecer meus serviços
-            </button>
+            </Button>
 
           </div>
 
