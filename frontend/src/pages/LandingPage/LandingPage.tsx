@@ -1,10 +1,10 @@
-import Navbar from "../../components/layout/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import HowItWorks from "./components/HowItWorks/HowItWorks";
-import PopularServices from "./components/PopularServices/PopularServices";
-import TrustSection from "./components/TrustSection/TrustSection";
-import FinalCta from "./components/FinalCta/FinalCta";
-import Footer from "./components/Footer/Footer";
+import Navbar from "../../components/layout/Navbar";
+import Hero from "../../components/sections/Hero";
+import HowItWorks from "../../components/sections/HowItWorks";
+import PopularServices from "../../components/sections/PopularServices";
+import TrustSection from "../../components/sections/TrustSection";
+import FinalCta from "../../components/sections/FinalCta";
+import Footer from "../../components/layout/Footer";
 
 function LandingPage() {
     return (
