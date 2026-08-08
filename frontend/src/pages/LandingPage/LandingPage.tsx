@@ -1,4 +1,3 @@
-import Navbar from "../../components/layout/Navbar";
 import Hero from "../../components/sections/Hero";
 import HowItWorks from "../../components/sections/HowItWorks";
 import PopularServices from "../../components/sections/PopularServices";
@@ -9,8 +8,6 @@ import Footer from "../../components/layout/Footer";
 function LandingPage() {
     return (
         <>
-          <Navbar />
-
           <Hero />
 
           <PopularServices />

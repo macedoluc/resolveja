@@ -27,14 +27,14 @@ function HowItWorks() {
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
+    <section id="como-funciona" className="bg-gray-50 py-20">
       <div className="mx-auto max-w-7xl px-6">
 
         <SectionTitle
           eyebrow="Simples e rápido"
           title="Como funciona?"
           description="Encontrar um profissional confiável pode ser simples. Veja como o ResolveJá funciona."
-          align="left"
+          align="center"
         />
 
         {/* Etapas */}

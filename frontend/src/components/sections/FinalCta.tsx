@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import Button from "../ui/Button";
 
 function FinalCta() {
@@ -18,11 +17,11 @@ function FinalCta() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
 
-            <Button>
+            <Button href="#login?intencao=contratar">
               Encontrar profissional
             </Button>
 
-            <Button variant="secondary">
+            <Button variant="secondary" href="#login?intencao=oferecer">
               Oferecer meus serviços
             </Button>
 

@@ -1,15 +1,18 @@
 import heroImage from "../../assets/images/hero.svg";
 import Button from "../ui/Button";
 
+const benefits = [
+  "Profissionais avaliados pela comunidade",
+  "Contato rápido entre cliente e profissional",
+  "Mais segurança para contratar serviços",
+];
 
 function Hero() {
   return (
     <section className="bg-gray-50">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 py-20 md:grid-cols-2">
-
-        {/* Conteúdo */}
+        
         <div>
-
           <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
             Plataforma segura para contratação de serviços
           </span>
@@ -25,31 +28,20 @@ function Hero() {
           </p>
 
           <div className="mt-8 space-y-3">
-
-            <div className="flex items-center gap-3">
-              <span>✅</span>
-              <p>Profissionais avaliados pela comunidade</p>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <span>✅</span>
-              <p>Contato rápido entre cliente e profissional</p>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <span>✅</span>
-              <p>Mais segurança para contratar serviços</p>
-            </div>
-
+            {benefits.map((benefit) => (
+              <div key={benefit} className="flex items-center gap-3">
+                <span>✅</span>
+                <p>{benefit}</p>
+              </div>
+            ))}
           </div>
 
           <div className="mt-10 flex flex-wrap gap-4">
-
-            <Button>
+            <Button href="#login?intencao=contratar">
               Quero contratar
             </Button>
 
-            <Button variant="secondary">
+            <Button variant="secondary" href="#login?intencao=oferecer">
               Quero oferecer serviços
             </Button>
 
@@ -63,7 +55,7 @@ function Hero() {
 
           <img
             src={heroImage}
-            alt="Profissionais trabalhando"
+            alt="Ilustração de profissionais oferecendo serviços"
             className="w-full max-w-lg"
           />
 

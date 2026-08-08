@@ -44,14 +44,14 @@ function PopularServices() {
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section id="servicos" className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-6">
 
         <SectionTitle
           eyebrow="Encontre o profissional certo"
           title="Serviços populares"
           description="Encontre profissionais qualificados para as necessidades do seu dia a dia."
-          align="left"
+          align="center"
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
