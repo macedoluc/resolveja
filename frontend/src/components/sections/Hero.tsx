@@ -1,4 +1,5 @@
 import heroImage from "../../../../assets/images/hero.svg";
+import Button from "../ui/Button";
 
 function Hero() {
   return (
@@ -43,13 +44,13 @@ function Hero() {
 
           <div className="mt-10 flex flex-wrap gap-4">
 
-            <button className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-700">
+            <Button>
               Quero contratar
-            </button>
+            </Button>
 
-            <button className="rounded-xl border border-gray-300 px-8 py-4 font-semibold transition hover:bg-gray-100">
+            <Button variant="secondary">
               Quero oferecer serviços
-            </button>
+            </Button>
 
           </div>
 
